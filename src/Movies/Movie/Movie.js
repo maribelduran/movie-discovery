@@ -31,21 +31,3 @@ const Movie = ({ movie = {} }) => {
 };
 
 export default Movie;
-
-/*
-export const Poster = styled.img`
-  box-shadow: 0 0 35px black;
-`;
-
-
-<Link to={`/${movie.id}`}>
-      <Overdrive id={`${movie.id}`}>
-        <Poster
-          data-testid="movie-img"
-          src={`${POSTER_PATH}${movie.poster_path}`}
-          alt={movie.title}
-        />
-      </Overdrive>
-    </Link>
-  );
-  */
