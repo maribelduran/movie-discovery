@@ -23,6 +23,8 @@ To retrieve a list of movies for a particular movie, submit a title in the searc
      <img src="https://res.cloudinary.com/maribelduran/image/upload/c_scale,w_540/v1583138592/LionKingSearch_yin6g9.png"> 
   </kbd>
   
+  
+  
  When you select a movie from the list, it will take you to a page that provides more information about the movie:
  
  <kbd>
@@ -69,6 +71,6 @@ You should also:
 7) Visit http://localhost:3000
 
  Note:
-    You can start the server on its own with the command ```npm run server ``` .You can start the React application on its own with the command ``` npm start ```
+    You can start the server on its own with the command ```npm run server ```.You can start the React application on its own with the command ``` npm start ```
 
 Enjoy! :blue_heart:
