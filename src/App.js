@@ -1,25 +1,29 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import MoviesContainer from "./Movies/MoviesContainer";
-
-import logo from "./logo.svg";
+import MovieDetailContainer from "./Movies/Movie/MovieDetailContainer";
 import "./App.css";
 
 function App() {
   return (
     <Router>
-      <div className="App"></div>
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Link to="/" className="App-link">
-          <h1 className="App-title">MOVIE DISCOVERY</h1>
-        </Link>
-      </header>
-      <Switch>
-        <Route exact path="/">
-          <MoviesContainer />
-        </Route>
-      </Switch>
+      <div className="App">
+        <header className="App-header">
+          <Link to="/" className="App-link">
+            <h1 className="App-title">{"MOVIE DISCOVERY"}</h1>
+          </Link>
+        </header>
+        <main>
+          <Switch>
+            <Route exact path="/">
+              <MoviesContainer />
+            </Route>
+            <Route path="/:id">
+              <MovieDetailContainer />
+            </Route>
+          </Switch>
+        </main>
+      </div>
     </Router>
   );
 }
