@@ -1,0 +1,7 @@
+.movie-detail-card {
+  border: thin solid rgba(51, 122, 183, 0.1);
+  border-radius: 5px;
+  box-shadow: 0 12px 12px 0 #d3d3d3;
+  box-sizing: border-box;
+  background-color: white;
+}
