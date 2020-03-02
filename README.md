@@ -73,4 +73,4 @@ You should also:
  Note:
     You can start the server on its own with the command ```npm run server ```.You can start the React application on its own with the command ``` npm start ```
 
-Enjoy! :blue_heart:
+Enjoy! :movie_camera:
