@@ -1,0 +1,23 @@
+.movies a,
+.movies a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.list-title {
+  text-align: center;
+  font-weight: 400;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.movie-list {
+  padding-top: 5px;
+  list-style: none;
+  display: flex !important;
+  display: -webkit-flex;
+  -webkit-flex-wrap: wrap;
+  display: -webkit-inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}

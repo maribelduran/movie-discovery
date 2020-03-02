@@ -1,6 +1,7 @@
 import React, { useState, useEffect, Fragment } from "react";
 import useFetch from "use-http";
 import MoviesSearch from "./MoviesSearch";
+import MoviesList from "./MoviesList";
 import { Error, Loading } from "../common";
 
 const MoviesContainer = () => {
@@ -19,7 +20,8 @@ const MoviesContainer = () => {
     fetchData();
   }, [url, getMovies]);
 
-  const handleSubmit = () => {
+  const handleSubmit = event => {
+    event.preventDefault();
     setHeading("Search Result");
     setUrl(`/search?query=${query}`);
   };
@@ -31,16 +33,7 @@ const MoviesContainer = () => {
       {loading ? (
         <Loading />
       ) : (
-        data.results && (
-          <div>
-            <h2>{heading}</h2>
-            <ul>
-              {data.results.map(item => (
-                <li key={item.id}>{item.title}</li>
-              ))}
-            </ul>
-          </div>
-        )
+        data.results && <MoviesList title={heading} movies={data.results} />
       )}
     </Fragment>
   );
